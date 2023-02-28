@@ -14,4 +14,11 @@ class RecipesController < ApplicationController
     #create recipes
     def create
     end
+
+    private
+
+    # find recipes
+    def find_recipe
+        @recipe = Recipe.find(params[:id])
+    end
 end
