@@ -30,6 +30,9 @@ gem "jbuilder"
 
 # haml, elegant and structured html/xml templating engine
 gem 'haml', '~> 6.1', '>= 6.1.1'
+
+# forms made easy
+gem 'simple_form', '~> 5.2'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
