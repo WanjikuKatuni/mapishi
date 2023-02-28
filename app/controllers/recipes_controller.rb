@@ -3,6 +3,7 @@ class RecipesController < ApplicationController
     
     # index method/action
     def index
+        @recipe = Recipe.all.order("created_At DESC")
     end
 
     #show recipes
