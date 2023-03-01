@@ -27,12 +27,21 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# turbolinks
+gem 'turbolinks', '~> 5.2', '>= 5.2.1'
 
 # haml, elegant and structured html/xml templating engine
 gem 'haml', '~> 6.1', '>= 6.1.1'
 
 # forms made easy
 gem 'simple_form', '~> 5.2'
+
+# bootstrap
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+
+# jquery rails
+gem 'jquery-rails'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
