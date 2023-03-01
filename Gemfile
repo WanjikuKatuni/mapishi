@@ -36,6 +36,9 @@ gem 'haml', '~> 6.1', '>= 6.1.1'
 # forms made easy
 gem 'simple_form', '~> 5.2'
 
+# paperclip for handling images
+gem 'paperclip', '~> 6.1'
+
 # bootstrap
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 
