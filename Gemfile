@@ -39,6 +39,9 @@ gem 'simple_form', '~> 5.2'
 # paperclip for handling images
 gem 'paperclip', '~> 6.1'
 
+# cocoon for nested forms
+gem 'cocoon', '~> 1.2', '>= 1.2.15'
+
 # bootstrap
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 
