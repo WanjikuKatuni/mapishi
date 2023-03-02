@@ -20,17 +20,34 @@
                 %ul 
                     - @recipe.directions.each do |direction|
                         %li= direcion.step
-    
+    .row 
+        .col-md-12
+            %h2 Drink that goes with the meal 
+            %br
+    .row
+        .col-md-4               
+            
+            = image_tag @output['drinks'][0]['strDrinkThumb'],class: "recipe_image"
+                
+
+        .col-md-8 
+            #directions 
+                %h2= @output['drinks'][0]['strDrink']
+                %ul
+                    %li= @output['drinks'][0]['strIngredient1']
+                    %li= @output['drinks'][0]['strIngredient2']
+                %h2 Direction
+                %ul
+                    %li= @output['drinks'][0]['strInstructions']
     .row 
         .col-md-12 
 
            
             = link_to "Back", root_path, class: "btn btn-default"
             = link_to "Edit", edit_recipe_path, class: "btn btn-default"
-            = link_to "Delete", recipe_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-default" 
+            = link_to "Delete", recipe_path, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn btn-default" 
 
-= @output['drinks'][0]['strDrink']
-= @output['drinks'][0]['strDrinkThumb']
-= @output['drinks'][0]['strInstructions']
+
+
 
 
