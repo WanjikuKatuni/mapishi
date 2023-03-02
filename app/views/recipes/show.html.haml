@@ -16,25 +16,21 @@
                         %li= ingredient.name 
         .col-md-6 
             #directions 
-                %h2 Directions 
+                %h2 Direction
                 %ul 
                     - @recipe.directions.each do |direction|
                         %li= direcion.step
     
     .row 
         .col-md-12 
+
+           
             = link_to "Back", root_path, class: "btn btn-default"
             = link_to "Edit", edit_recipe_path, class: "btn btn-default"
             = link_to "Delete", recipe_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-default" 
 
+= @output['drinks'][0]['strDrink']
+= @output['drinks'][0]['strDrinkThumb']
+= @output['drinks'][0]['strInstructions']
 
 
-
-
-= image_tag @recipe.image.url(:medium, class: "recipe_image")
-%h1= @recipe.title
-%p= @recipe.description
-
-= link_to "Back", root_path, class: "btn btn-default"
-= link_to "Edit", edit_recipe_path, class: "btn btn-default"
-= link_to "Delete", recipe_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-default" 

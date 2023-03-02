@@ -4,10 +4,19 @@ class RecipesController < ApplicationController
     # index method/action
     def index
         @recipe = Recipe.all.order("created_At DESC")
+
+        
     end
 
     #show recipes
     def show
+        require 'net/http'
+        require 'json'
+        # get drink
+        @url = 'https://www.thecocktaildb.com/api/json/v1/1/random.php'
+        @uri = URI(@url)
+        @response = Net::HTTP.get(@uri)
+        @output = JSON.parse(@response)
     end
 
     #new recipes
