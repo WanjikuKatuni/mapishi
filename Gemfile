@@ -48,6 +48,7 @@ gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 # jquery rails
 gem 'jquery-rails'
 
+
 # webpacker
 gem 'webpacker', '~> 5.4', '>= 5.4.4'
 
