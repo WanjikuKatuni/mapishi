@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_01_103226) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_03_103523) do
   create_table "directions", force: :cascade do |t|
     t.text "step"
     t.integer "recipe_id", null: false
@@ -32,13 +32,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_01_103226) do
     t.text "description"
     t.integer "user_id"
     t.datetime "created_at", null: false
-    t.datetime "updated_athttp://www.thecocktaildb.com/api/json/v1/1/random.php", null: false
+    t.datetime "updated_at", null: false
     t.string "image_file_name"
     t.string "image_content_type"
     t.bigint "image_file_size"
     t.datetime "image_updated_at"
   end
 
-  add_foreign_key "directions", "recipes"
-  add_foreign_key "ingredients", "recipes"
 end
