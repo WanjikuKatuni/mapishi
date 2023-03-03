@@ -32,7 +32,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_01_103226) do
     t.text "description"
     t.integer "user_id"
     t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "updated_athttp://www.thecocktaildb.com/api/json/v1/1/random.php", null: false
     t.string "image_file_name"
     t.string "image_content_type"
     t.bigint "image_file_size"
