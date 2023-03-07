@@ -1,6 +1,7 @@
 # MAPISHI
 
-his is a recipe app made in Ruby on Rails. It allows users to add new recipes,  browse through a collection of recipes, and edit or delete existing ones.
+Mapishi is swahili for "recipe." This is a recipe app made in Ruby on Rails. It allows users to add new recipes,  browse through a collection of recipes, and edit or delete existing ones.
+![mapishi app](app/assets/images/Screenshot.png)
 
 
 
