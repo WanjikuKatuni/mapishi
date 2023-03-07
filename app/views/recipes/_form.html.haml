@@ -3,7 +3,7 @@
     #errors
       %p
         = @recipe.errors.count
-        Prevented this recipe form saving
+        Prevented this recipe from saving
       %ul
         - @recipe.errors.full_messages.each do |msg|
           %li= msg

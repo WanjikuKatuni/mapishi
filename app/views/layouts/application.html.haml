@@ -14,11 +14,21 @@
     .container 
       .navbar-brand= link_to "Mapishi", root_path 
 
-      -# %ul.nav.navbar-nav.navbar-right
-      -#   %li= link_to "Add Recipe", new_recipe_path 
-      -#   %li= link_to "Sign Out", root_path
+      %ul.nav.navbar-nav.navbar-right
+        %li= link_to "Add Recipe", new_recipe_path 
+      
   
   .container 
+    .row 
+      .col
+        #landing
+          %h1 Mapishi
+          %h2 Coupling your recipes with a perfect drink
+          %br
+          %p Mapishi which is Swahili for Recipes, is a recipe application designed to enable users to post their recipes.
+          %p Once posted it displays the recipe which when clicked, shows a random cocktail that would go well with the meal.
+          %br
+          %br
     
     - flash.each do |name, msg|
       = content_tag :div, msg, class: "alert"

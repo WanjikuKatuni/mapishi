@@ -17,8 +17,7 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
-
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Libre+Baskerville:ital@1&family=Rubik+Gemstones&display=swap');
 
 
 @mixin box-shadow {
@@ -30,7 +29,7 @@
 $red: #DB6161;
 
 body {
-	background: rgb(235, 238, 243);
+	background: rgb(219,205,181);
 }
 
 .main_content {
@@ -43,7 +42,7 @@ body {
 	border: 1px solid transparent;
 	border-radius: 5px;
 	@include box-shadow;
-	background: white;
+	background: rgb(233,176,142);
 	font-weight: bold;
 }
 
@@ -51,19 +50,42 @@ body {
 	margin-bottom: 50px;
 	@include box-shadow;
 	border: none;
+	a {
+		color: rgb(164,51,13);
+	}
 	.navbar-brand {
 		text-transform: uppercase;
 		letter-spacing: -1px;
 		font-weight: bold;
 		font-size: 25px;
 		a {
-			color: $red;
+			color: rgb(94,60,44);
 		}
+	}
+
+		
+
+}
+
+#landing {
+	h1 {
+		font-size: 7rem;
+		font-family: 'Rubik Gemstones', cursive;
+		color: rgb(94,60,44);
+	}
+	h2 {
+		font-family: 'Glass Antiqua', cursive;
+		font-size: 4rem;
+	}
+
+	p {
+		font-family: 'Libre Baskerville', serif;
+		font-size: 2rem;
 	}
 }
 
 .recipe {
-	background: white;
+	background: rgb(233,176,142);
 	border-radius: 5px;
 	margin-bottom: 40px;
 	@include box-shadow;
@@ -89,7 +111,8 @@ body {
 		font-weight: normal;
 		line-height: 1.5;
 		a {
-			color: $red;
+			color: rgb(164,51,13);
+			
 		}
 	}
 }
@@ -99,7 +122,7 @@ body {
 }
 
 #recipe_info, #ingredients, #directions {
-	background: white;
+	background: rgb(235, 231, 231);
 	@include box-shadow;
 	min-height: 360px;
 	border-radius: 5px;
@@ -117,6 +140,8 @@ body {
 		font-size: 36px;
 		font-weight: normal;
 		color: $red;
+		font-family: 'Glass Antiqua', cursive;
+
 	}
 	.description {
 		color: #8A8A8A;
@@ -131,6 +156,7 @@ body {
 		li {
 			padding: 1em 0;
 			border-bottom: 1px solid #EAEAEA;
+			font-family: 'Libre Baskerville', serif;
 		}
 	}
 }
